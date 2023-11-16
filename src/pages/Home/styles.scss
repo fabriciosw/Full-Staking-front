@@ -1,0 +1,34 @@
+.home {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  &__body {
+    padding: 3.5rem 10rem 3.5rem (calc(10rem + 4.5%));
+    background-color: #0e1118;
+    width: -webkit-fill-available;
+    min-height: 100vh;
+
+    @media screen {
+      @media (max-width: 1400px) {
+        padding: 3.5rem 5rem 3.5rem (calc(5rem + 4.5%));
+      }
+
+      @media (max-width: 900px) {
+        padding: 3.5rem 2.5rem 3.5rem (calc(2.5rem + 4.5%));
+      }
+    }
+  }
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+}
+
+.underline {
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  border-bottom: 3px solid #4717f6;
+}

@@ -1,0 +1,50 @@
+.postContainer {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: -webkit-fill-available;
+
+  &__body {
+    background-color: #0e1118;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.post {
+  width: 55%;
+  margin: 6rem auto 3rem auto;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    border-bottom: 2px #888d93 solid;
+
+    &__category {
+      margin-bottom: 1.5rem;
+      margin-top: 1rem;
+      width: fit-content;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: solid 2px #888d93;
+    }
+
+    &__lineSpaceTop {
+      margin-top: 2.15rem;
+    }
+
+    &__lineSpaceBottom {
+      margin-bottom: 2.15rem;
+    }
+  }
+
+  &__content {
+    white-space: pre-wrap;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
